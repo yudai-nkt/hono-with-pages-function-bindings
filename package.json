@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "wrangler pages dev --kv KV_FOR_REPRO -- vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev:pages": "wrangler pages dev pages --kv KV_FOR_REPRO",
+    "dev:workers": "wrangler dev --local functions/worker.ts"
   },
   "dependencies": {
     "hono": "^2.7.2"
