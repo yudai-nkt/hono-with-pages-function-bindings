@@ -17,18 +17,18 @@ $ npx wrangler kv:namespace create KV_FOR_REPRO --preview # and follow the instr
 
 ```console
 $ npm run dev:pages
-$ curl http://localhost:8788/api/raw
-Without Hono! # expected
-$ curl http://localhost:8788/api/hono
-Internal Server Error # not expected
+$ curl http://localhost:8788/api/raw # expected
+Without Hono!
+$ curl http://localhost:8788/api/hono # not expected
+Internal Server Error
 ```
 
 ### Cloudflare Workers
 
 ```console
-$ npm run dev:pages
-$ curl http://localhost:8787/api/hono
-With Hono! # expected
+$ npm run dev:workers
+$ curl http://localhost:8787/api/hono # expected
+With Hono!
 ```
 
 ## License
