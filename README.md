@@ -8,7 +8,7 @@ Minimal repro for honojs/hono#802
 
 ```console
 $ git clone https://github.com/yudai-nkt/hono-with-pages-function-bindings.git
-$ cd cloudflare-pages-etude
+$ cd hono-with-pages-function-bindings
 $ npm ci
 $ npx wrangler kv:namespace create KV_FOR_REPRO --preview # and follow the instruction
 ```
